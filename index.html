@@ -10,7 +10,119 @@
     <title></title>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1>Which programming language should I chose?</h1>
+      <p>
+        Lost? take our quiz to find out which programming language you should learn.
+      </p>
+    </div>
+    <div class="conatiner">
+      <div class="col-sm-4">
+        <div class="">
+          placeholder text
+          <!-- content will be the side bar with header, remove jumbotron -->
+        </div>
+      </div>
+      <!-- end col 1 -->
+      <div class="">
+        <div class="col-sm-8">
+          <!-- unspecified div. may use later -->
+          <p>
+            <!-- some text introducing the quiz -->
+          </p>
+          <form class="" action="index.html" method="post">
+            <label for="">While each language has it's own learning curve and different people have their own predilections, there is generally an order in which web developers and programmers learn some basic languages. Please tell us what answer best suits your state of knowledge in code or similar fields. If more than one answer applies, pick the one that most suits your interest at the moment </label>
+            <label for="question1"></label>
+            <select id="question1" class="" >
+              <option value="4"> None at all</option>
+              <option value="5">Some HTML and CSS </option>
+              <option value="6">Javascript </option>
+              <option value="7"> Engineering</option>
+              <option value="8"> Banking </option>
+            </select>
+            <label for="question2">Programming can neatly be divided into two categories: <strong>front-end</strong> (also known as client-side ) and back-end (also known as business side). While front-end jobs may deal with the side of the website that deals with the user interface and experience(UX and UI). Backend developers deal with code that make a site or app work, including server intraction and database. It is incredibly important to have a basic understanding of both fields, but often students have a preference. Which side of web delveopment most appealst to you</label>
+            <select id="question2" class="" >
+              <option value="">No preference </option>
+              <option value="">Frontend</option>
+              <option value="">Backend</option>
+              <option value=""> I am equally interested</option>
+            </select>
+            <label for="question3">Would you like making aps for smartphones?</label>
+            <select id="question3" class="" >
+              <option value="">No preference </option>
+              <option value=""> Yes! Preferably Androids</option>
+              <option value="">Yes! preferably iPhones</option>
+              <option value="">Maybe</option>
+              <option value="">No, not interested in making aps. I just enjoy code</option>
+            </select>
+            <label for="question4">What kind of employment arrangement sounds good to you?</label>
+            <select id="question4" class="" >
+              <option value="">No preference </option>
+              <option value=""> Working for a big company<option>
+              <option value="">Working for small company, making sites for other people</option>
+              <option value="">freelancing </option>
+              <option value=""> Game developer</option>
+            </select>
+            <label for="question5">Pick a statement that sounds good to you</label>
+            <select id="question5" class="" >
+              <option value="">No preference </option>
+              <option value="">1 </option>
+              <option value=""> 2</option>
+              <option value=""> 3</option>
+              <option value=""> 4</option>
+              <option value=""> 5 </option>
+            </select>
+            <button id="submitButton" class="btn btn-success" type="button" name="button" data-toggle="modal" data-target="#myModal">Submit</button>
+          </form>
+          <!-- Button trigger modal -->
 
+
+          <!-- Modal to display results-->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div id="results" class=" modal-body">
+                  <div id="resultPhp" class="">
+                    <img  class="img-responsive"src="img/php.png" alt="" />
+                  <p>Based on our quiz, it sounds like PHP is a good match. PHP is a beginner-friendly, server-side scripting language with a long history, used in content heavy websites. Some notable examples of sites built with PHP include Facebook, Tumblr and Wordpress.</p>
+                  </div>
+                  <div id="resultJava" class="individualResults">
+                    <img  class="img-responsive"src="img/java.png" alt="" />
+                    <p> Java, a server-side scripting language, would be an excellent choice for you. Often used for enterprise-level development, people who specialize in Java often work for big companies. Did you know that <a href="#">90% of Fortune 500 companies use Java?</a> </p>
+                  </div>
+                  <div id="resultCss" class="individualResults">
+                    <img class="img-responsive" src="img/css.png" alt="" />
+                    <p>CSS/Design would be a great track for you to follow. CSS styles the content of the web, while Javascript is used to provide client-side interaction. CSS has its own formidable level of complexity, and the results provide a platform for you to interact most directly with users. While more dissimilar than the rest as far as programming languages, CSS has its own formidable challeneges, and mastery is well worth the time. Check out these <a href="#">Cool CSS tricks to get inspired</a></p>
+                  </div>
+                  <div id="resultRuby" class="individualResults">
+                    <img class="img-responsive" src="img/ruby.png" alt="" />
+                    <p>Ruby is the darling of startups and small business. Written simliar to vernacular English, ruby is relatively quicker to learn, more intuitive, and offers huge range of possiblities for client-interaction. If start-ups and small businesses sound like a good environment for you, Ruby is your language.
+                    </p>
+                  </div>
+                  <div id="resultC" class="individualResults">
+                    <p id="cSharpLogo">C#</p>
+                    <p> C# is used for web development, game development, and general Microsoft development. Recently, C#'s scope of uitility has been wildly expanded. The Job market is abundant with C# gigs with a multitude of uses. Hot job.</p>
+                  </div>
+                </div>
+
+                <div class="modal-footer">Enter your name and email address to receive more information on this course!
+                  <input type="text" name="name" placeholder="name" value="">
+                  <input type="text" name="name" placeholder="email address" value="">
+                  <button id="requestMoreInfo" type="button" class="btn btn-primary" data-dismiss="modal">submit</button>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end modal-->
+        </div> <!--end col2 -->
+      </div>
+
+    </div> <!-- end container-->
 
   </body>
 </html>
