@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:800|Lalezar|Raleway|Roboto+Condensed" rel="stylesheet">
+
+
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/mystyles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Which programming language is right for you?</title>
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Which programming language should I chose?</h1>
-      <p>
-        Lost? take our quiz to find out which programming language you should learn.
-      </p>
+      <h1 class="display-4"> Epicodus</h1>
+      <h3>Which programming language is right for you?</h3>
     </div>
     <div class="conatiner">
       <div class="col-sm-4">
@@ -23,14 +24,14 @@
           <!-- content will be the side bar with header, remove jumbotron -->
         </div>
       </div>
-      <!-- end col 1 -->
+      <!-- end col 1, begin quiz column -->
       <div class="">
         <div class="col-sm-8">
           <!-- unspecified div. may use later -->
-          <p>
-            <!-- some text introducing the quiz -->
-          </p>
+
           <form class="" action="index.html" method="post">
+            <h2>Take the Quiz:</h2>
+            <h4>Question 1</h4>
             <label for="">While each language has it's own learning curve and different people have their own predilections, there is generally an order in which web developers and programmers learn some basic languages. Please tell us what answer best suits your state of knowledge in code or similar fields. If more than one answer applies, pick the one that most suits your interest at the moment </label>
             <label for="question1"></label>
             <select id="question1" class="" >
@@ -40,6 +41,7 @@
               <option value="4"> Engineering</option>
               <option value="5"> Banking </option>
             </select>
+            <h4>Question 2</h4>
             <label for="question2">Programming can neatly be divided into two categories: <strong>front-end</strong> (also known as client-side ) and back-end (also known as business side). While front-end jobs may deal with the side of the website that deals with the user interface and experience(UX and UI). Backend developers deal with code that make a site or app work, including server intraction and database. It is incredibly important to have a basic understanding of both fields, but often students have a preference. Which side of web delveopment most appealst to you</label>
             <select id="question2" class="" >
               <option value="1">No preference </option>
@@ -47,6 +49,8 @@
               <option value="3">Backend</option>
               <option value="4"> I am equally interested</option>
             </select>
+            <h4>Question 3</h4>
+
             <label for="question3">Would you like making aps for smartphones?</label>
             <select id="question3" class="" >
               <option value="1">No preference </option>
@@ -55,6 +59,7 @@
               <option value="4">Maybe</option>
               <option value="5">No, not interested in making aps. I just enjoy code</option>
             </select>
+            <h4>Question 4</h4>
             <label for="question4">What kind of employment arrangement sounds good to you?</label>
             <select id="question4" class="" >
               <option value="1">No preference </option>
@@ -63,6 +68,7 @@
               <option value="4">freelancing </option>
               <option value="5"> Game developer</option>
             </select>
+            <h4>Question 5</h4>
             <label for="question5">Pick a statement that sounds good to you</label>
             <select id="question5" class="" >
               <option value="1">No preference </option>
@@ -77,7 +83,7 @@
           <!-- Button trigger modal -->
 
 
-          <!-- Modal to display results-->
+          <!-- BEGIN Modal to display results-->
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -85,29 +91,30 @@
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  <h2 class="modal-title" id="myModalLabel">Quiz Results</h2>
                 </div>
                 <div id="results" class=" modal-body">
                   <div id="resultPhp" class="individualResults">
+                    <h4>According to our survey...</h4>
                     <img  class="img-responsive"src="img/php.png" alt="" />
-                  <p>Based on our quiz, it sounds like PHP is a good match. PHP is a beginner-friendly, server-side scripting language with a long history, used in content heavy websites. Some notable examples of sites built with PHP include Facebook, Tumblr and Wordpress.</p>
+                    <p>...is a good match. PHP is a beginner-friendly, server-side scripting language with a long history, used in content heavy websites. Some notable examples of sites built with PHP include Facebook, Tumblr and Wordpress.</p>
                   </div>
                   <div id="resultJava" class="individualResults">
                     <img  class="img-responsive"src="img/java.png" alt="" />
-                    <p> Java, a server-side scripting language, would be an excellent choice for you. Often used for enterprise-level development, people who specialize in Java often work for big companies. Did you know that <a href="#">90% of Fortune 500 companies use Java?</a> </p>
+                    <p>...a server-side scripting language, would be an excellent choice for you. Often used for enterprise-level development, people who specialize in Java often work for big companies. Did you know that <a href="http://www.javaworld.com/article/2689406/java-platform/four-reasons-to-stick-with-java-and-four-reasons-to-dump-it.html">90% of Fortune 500 companies use Java?</a> </p>
                   </div>
                   <div id="resultCss" class="individualResults">
                     <img class="img-responsive" src="img/css.png" alt="" />
-                    <p>CSS/Design would be a great track for you to follow. CSS styles the content of the web, while Javascript is used to provide client-side interaction. CSS has its own formidable level of complexity, and the results provide a platform for you to interact most directly with users. While more dissimilar than the rest as far as programming languages, CSS has its own formidable challeneges, and mastery is well worth the time. Check out these <a href="#">Cool CSS tricks to get inspired</a></p>
+                    <p>...CSS/Design would be a great track for you to follow. CSS styles the content of the web, while Javascript is used to provide client-side interaction.  and the results provide a platform for you to interact more directly with users than other programming jobs. While somewhat dissimilar than the rest as far as programming languages, CSS has its own formidable challeneges, and mastery is well worth the effort. Check out these <a href="http://www.creativebloq.com/web-design/examples-css-912710">Cool CSS tricks to get inspired</a></p>
                   </div>
                   <div id="resultRuby" class="individualResults">
                     <img class="img-responsive" src="img/ruby.png" alt="" />
-                    <p>Ruby is the darling of startups and small business. Written simliar to vernacular English, ruby is relatively quicker to learn, more intuitive, and offers huge range of possiblities for client-interaction. If start-ups and small businesses sound like a good environment for you, Ruby is your language.
+                    <p>...you might want to look into Ruby, the darling of startups and small businesses. Written simliar to vernacular English, ruby is relatively quicker to learn, more intuitive, and offers huge range of possiblities for client-interaction. If start-ups and small businesses sound like a good environment for you, Ruby is your language.
                     </p>
                   </div>
                   <div id="resultC" class="individualResults">
                     <p id="cSharpLogo">C#</p>
-                    <p> C# is used for web development, game development, and general Microsoft development. Recently, C#'s scope of uitility has been wildly expanded. The Job market is abundant with C# gigs with a multitude of uses. Hot job.</p>
+                    <p>... you are obsessed with knowing how things function, and C# would be a  fantastic choice is used for web development, game development, and general Microsoft development. Recently, C#'s scope of uitility has been wildly expanded. The Job market is abundant with C# gigs with a multitude of uses that go beyond gaming. Enterprise-level developers frequently employ C#</p>
                   </div>
                 </div>
 

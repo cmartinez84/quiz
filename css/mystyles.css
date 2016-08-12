@@ -1,3 +1,39 @@
-/*.individualResults{
-  display: none;
-}*/
+body{
+  background: url("../img/background2.jpg")
+}
+.jumbotron{
+  background: rgba(0, 151, 153, 0.6);
+}
+h1, h3{
+  color: white !important;
+}
+h3{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+h1, h2, h4{
+  font-family: 'Kanit', sans-serif;;
+  text-transform: uppercase;
+}
+form{
+  background: white !important;
+  padding:  30px ;
+  border-radius: 5px;
+}
+label{
+  font-family: "Raleway";
+  padding: auto 55px;
+}
+
+@font-face {
+  font-family: 'BPdotsMinus'
+}
+.modal-content {
+  text-align: center;
+  padding: 50px;
+}
+.modal p{
+  padding: 40px auto !important
+}
+#cSharpLogo{
+  font-size: 12em;
+}
