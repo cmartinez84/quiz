@@ -7,6 +7,7 @@ var scoreCsharp = 1;
 
 
 $(function(){
+  $("#results > div").hide();
   $("#submitButton").click(function(){
     var answer1 = parseInt($("#question1").val());
     var answer2 = parseInt($("#question2").val());
@@ -161,17 +162,13 @@ $(function(){
  var results=[scorePhp, scoreCss, scoreCsharp, scoreJava, scoreRuby]; //places results in array
  console.log(results);
  var highestScore = Math.max(...results) //determines highest score
- console.log(highestScore);
-
-
-
-
-var languageNames = ["php", "css", "csharp", "java", "ruby"]
-$(results).each(function(i){
-  if(results[i] === highestScore){
-    console.log(languageNames[i]);
-  };
-})
+//uses the name from language array to determine which elements to display
+  var languageNames = ["Php", "Css", "Csharp", "Java", "Ruby"]
+  $(results).each(function(i){
+    if(results[i] === highestScore){
+      $("#result"+ languageNames[i]).show();
+    };
+  });
 
 
 
