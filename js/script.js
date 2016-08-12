@@ -163,7 +163,17 @@ $(function(){
  console.log(results);
  var highestScore = Math.max(...results) //determines highest score
 //uses the name from language array to determine which elements to display
-  var languageNames = ["Php", "Css", "Csharp", "Java", "Ruby"]
+  var languageNames = ["Php", "Css", "Csharp", "Java", "Ruby"];
+// more than one language? ideally give one result, picked at random
+  // var min = 1;
+  // var max = 2;
+  // var random = Math.floor(Math.random() * (max - min + 1)) + min;
+  // var languageName = languageNames[random];
+  // console.log(random);
+  // $("#result"+ languageName).show();
+
+
+// for multiple display results...may come back to this and append "OR" statemnts to display multipe results
   $(results).each(function(i){
     if(results[i] === highestScore){
       $("#result"+ languageNames[i]).show();
